@@ -25,7 +25,7 @@ export interface ProjectSkill {
 
 export function usePortfolioData() {
   const projects = ref<Project[]>(projectsData)
-  const skills = ref<Skill[]>(skillsData)
+  const skills = ref<Skill[]>(skillsData as Skill[])
   const projectSkills = ref<ProjectSkill[]>(projectSkillsData)
 
   // Get all projects
